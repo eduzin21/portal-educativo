@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Educacional | Capacitores</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="topo" id="inicio">
+        <a href="#inicio" class="marca">
+            <span class="logo">PE</span>
+            <span>
+                <strong>Portal Educacional</strong>
+                <small>Elétrica e Eletrônica</small>
+            </span>
+        </a>
+
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#conteudo">Conteúdo</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#referencias">Referências</a>
+        </nav>
+
+        <form class="busca" id="form-busca">
+            <input
+                type="search"
+                id="campo-busca"
+                placeholder="Buscar nesta página..."
+                aria-label="Buscar conteúdo"
+            >
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+    <div class="layout">
+
+        <aside class="lateral">
+            <h3>NESTE ASSUNTO</h3>
+
+            <a href="#introducao">Introdução</a>
+            <a href="#o-que-e">O que é um capacitor?</a>
+            <a href="#funcionamento">Como funciona?</a>
+            <a href="#tipos">Tipos de capacitores</a>
+            <a href="#bateria">Capacitor e bateria</a>
+            <a href="#exemplos">Exemplos práticos</a>
+            <a href="#curiosidades">Curiosidades</a>
+            <a href="#resumo">Resumo para o caderno</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#referencias">Referências</a>
+        </aside>
+
+        <main class="conteudo" id="conteudo">
+
+            <section class="abertura" id="introducao">
+                <span class="etiqueta">COMPONENTES PASSIVOS BÁSICOS</span>
+
+                <h1>Capacitores e Armazenamento de Energia</h1>
+
+                <p>
+                    Entenda como esse componente ajuda os circuitos
+                    eletrônicos a funcionar.
+                </p>
+            </section>
+
+            <section class="bloco">
+                <h2>Introdução</h2>
+
+                <p>
+                    Os capacitores são componentes importantes na
+                    eletroeletrônica e estão presentes em muitos aparelhos
+                    que usamos, como televisores, computadores e fontes
+                    de alimentação. Eles conseguem armazenar energia
+                    elétrica por um curto período e liberá-la quando o
+                    circuito precisa. Por isso, ajudam vários equipamentos
+                    a funcionarem corretamente.
+                </p>
+            </section>
+
+            <section class="bloco" id="o-que-e">
+                <h2>O que é um capacitor?</h2>
+
+                <p>
+                    Um capacitor é um componente eletrônico formado por
+                    duas partes condutoras separadas por um material
+                    isolante, chamado <strong>dielétrico</strong>.
+                    Quando uma tensão elétrica é aplicada, cargas elétricas
+                    se acumulam nessas partes e a energia fica armazenada
+                    em um campo elétrico.
+                </p>
+
+                <div class="destaque">
+                    <strong>Você sabia?</strong>
+                    <p>
+                        Mesmo sendo pequenos, os capacitores podem
+                        desempenhar funções importantes em vários
+                        equipamentos eletrônicos.
+                    </p>
+                </div>
+            </section>
+
+            <section class="bloco" id="funcionamento">
+                <h2>Como funciona?</h2>
+
+                <p>
+                    O capacitor funciona em duas etapas:
+                    <strong>carga e descarga</strong>. Na carga, ele
+                    recebe energia de uma fonte elétrica. Na descarga,
+                    libera parte dessa energia para o circuito.
+                </p>
+
+                <p>
+                    A capacidade de armazenar carga é chamada de
+                    capacitância e é medida em farads (F). Também é comum
+                    encontrar valores em microfarads (µF) e picofarads
+                    (pF).
+                </p>
+
+                <p>
+                    Cada capacitor possui uma tensão máxima de trabalho,
+                    que deve ser respeitada para evitar danos ao componente.
+                </p>
+
+                <div class="etapas">
+                    <div class="etapa">
+                        <span>1</span>
+                        <strong>Fonte elétrica</strong>
+                        <p>Fornece energia.</p>
+                    </div>
+
+                    <div class="seta">→</div>
+
+                    <div class="etapa">
+                        <span>2</span>
+                        <strong>Carga</strong>
+                        <p>O capacitor acumula energia.</p>
+                    </div>
+
+                    <div class="seta">→</div>
+
+                    <div class="etapa">
+                        <span>3</span>
+                        <strong>Descarga</strong>
+                        <p>A energia vai para o circuito.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bloco" id="tipos">
+                <h2>Tipos mais comuns</h2>
+
+                <div class="tipo">
+                    <div class="simbolo ceramico"></div>
+
+                    <div>
+                        <h3>Capacitor cerâmico</h3>
+                        <p>
+                            Geralmente é pequeno e muito usado em placas
+                            eletrônicas para filtrar sinais e reduzir
+                            interferências.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tipo">
+                    <div class="simbolo eletrolitico"></div>
+
+                    <div>
+                        <h3>Capacitor eletrolítico</h3>
+                        <p>
+                            Costuma ter capacitância maior e aparece
+                            bastante em fontes de alimentação. Muitos
+                            modelos possuem polaridade e precisam ser
+                            ligados corretamente.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tipo">
+                    <div class="simbolo filme"></div>
+
+                    <div>
+                        <h3>Capacitor de filme</h3>
+                        <p>
+                            É utilizado em diferentes circuitos
+                            eletrônicos e, em muitos modelos, não possui
+                            polaridade definida.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bloco" id="bateria">
+                <h2>Capacitor e bateria são iguais?</h2>
+
+                <p>
+                    Não. Os dois armazenam energia, mas de formas
+                    diferentes. O capacitor armazena energia em um campo
+                    elétrico e normalmente carrega e descarrega
+                    rapidamente. A bateria usa reações químicas e costuma
+                    fornecer energia por mais tempo.
+                </p>
+
+                <div class="comparacao">
+                    <div>
+                        <h3>Capacitor</h3>
+                        <p>Carrega e descarrega rapidamente.</p>
+                    </div>
+
+                    <div>
+                        <h3>Bateria</h3>
+                        <p>Geralmente fornece energia por mais tempo.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bloco" id="exemplos">
+                <h2>Exemplos práticos</h2>
+
+                <ul>
+                    <li>
+                        <strong>Fontes de alimentação:</strong>
+                        ajudam a deixar a tensão mais estável.
+                    </li>
+
+                    <li>
+                        <strong>Flash de câmera:</strong>
+                        pode acumular energia e liberá-la rapidamente
+                        para produzir um clarão.
+                    </li>
+
+                    <li>
+                        <strong>Motores elétricos:</strong>
+                        alguns usam capacitores para ajudar na partida
+                        ou no funcionamento.
+                    </li>
+
+                    <li>
+                        <strong>Equipamentos de som:</strong>
+                        capacitores podem ajudar a filtrar sinais.
+                    </li>
+
+                    <li>
+                        <strong>Placas eletrônicas:</strong>
+                        ajudam a reduzir ruídos e interferências.
+                    </li>
+                </ul>
+            </section>
+
+            <section class="bloco" id="curiosidades">
+                <h2>Curiosidades e aplicações</h2>
+
+                <p>
+                    O flash de uma câmera pode usar um capacitor para
+                    liberar energia em um intervalo muito curto.
+                    Capacitores também estão dentro de vários aparelhos
+                    eletrônicos, mesmo quando não conseguimos vê-los.
+                </p>
+
+                <p>
+                    Em instalações industriais, conjuntos de capacitores
+                    podem ajudar na correção do fator de potência.
+                    A escolha e a instalação devem ser feitas por
+                    profissionais capacitados.
+                </p>
+            </section>
+
+            <section class="bloco resumo" id="resumo">
+                <h2>Resumo para o caderno</h2>
+
+                <p>
+                    O capacitor é um componente eletrônico que armazena
+                    energia elétrica temporariamente em um campo elétrico.
+                    É formado por partes condutoras separadas por um
+                    isolante chamado dielétrico. Ele passa pelos processos
+                    de carga e descarga e sua capacitância é medida em
+                    farads (F). Os tipos mais comuns incluem cerâmico,
+                    eletrolítico e de filme. É usado em fontes de
+                    alimentação, flashes, motores e placas eletrônicas.
+                    Diferente da bateria, geralmente armazena menos energia,
+                    mas consegue carregar e descarregar rapidamente.
+                </p>
+            </section>
+
+            <section class="bloco" id="quiz">
+                <h2>Teste o que você aprendeu</h2>
+
+                <p>
+                    Responda às perguntas e confira quantas você acertou.
+                </p>
+
+                <form id="quiz-form">
+
+                    <fieldset>
+                        <legend>1. Qual é a principal função de um capacitor?</legend>
+
+                        <label>
+                            <input type="radio" name="q1" value="a">
+                            Produzir combustível.
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q1" value="b">
+                            Armazenar energia elétrica temporariamente.
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q1" value="c">
+                            Transformar-se em bateria.
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>2. Como se chama o material isolante?</legend>
+
+                        <label>
+                            <input type="radio" name="q2" value="a">
+                            Dielétrico.
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q2" value="b">
+                            Filamento.
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q2" value="c">
+                            Fusível.
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>3. Qual é a unidade de medida da capacitância?</legend>
+
+                        <label>
+                            <input type="radio" name="q3" value="a">
+                            Metro.
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q3" value="b">
+                            Ampere-hora.
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q3" value="c">
+                            Farad.
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>4. Quais são as duas etapas básicas do funcionamento?</legend>
+
+                        <label>
+                            <input type="radio" name="q4" value="a">
+                            Aquecimento e resfriamento.
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q4" value="b">
+                            Carga e descarga.
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q4" value="c">
+                            Entrada e aterramento.
+                        </label>
+                    </fieldset>
+
+                    <button type="submit" class="botao">
+                        Conferir respostas
+                    </button>
+
+                    <p id="resultado-quiz" aria-live="polite"></p>
+                </form>
+            </section>
+
+            <section class="bloco" id="referencias">
+                <h2>Referências</h2>
+
+                <ul>
+                    <li>
+                        <a href="https://www.mundodaeletrica.com.br/capacitor-funcionamento-aplicacoes/"
+                           target="_blank" rel="noopener">
+                            Mundo da Elétrica — Capacitor: funcionamento e aplicações.
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://mundoeducacao.uol.com.br/fisica/capacitores.htm"
+                           target="_blank" rel="noopener">
+                            Mundo Educação — Capacitores.
+                        </a>
+                    </li>
+
+                    <li>
+                        Ilustrações dos capacitores: desenhos feitos em CSS
+                        para este protótipo educacional.
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="rodape">
+        <div>
+            <h3>Portal Educacional</h3>
+            <p>Conteúdo introdutório de elétrica e eletrônica.</p>
+        </div>
+
+        <div>
+            <h3>Navegação</h3>
+            <a href="#inicio">Início</a>
+            <a href="#conteudo">Conteúdo</a>
+            <a href="#quiz">Quiz</a>
+        </div>
+
+        <div>
+            <h3>Sobre o projeto</h3>
+            <p>
+                Projeto acadêmico demonstrativo, sem banco de dados
+                ou sistema de login.
+            </p>
+        </div>
+
+        <p class="copyright">
+            © 2026 Portal Educacional. Trabalho escolar.
+        </p>
+    </footer>
+
+</body>
+</html>

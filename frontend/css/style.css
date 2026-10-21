@@ -1,0 +1,714 @@
+
+/* ==============================
+   1. CONFIGURAÇÕES GERAIS
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #243244;
+    background-color: #f5f7fa;
+    line-height: 1.6;
+}
+
+a {
+    color: #163b63;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+/* ==============================
+   2. CABEÇALHO
+================================= */
+
+.topo {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e6ed;
+    padding: 14px 4%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 210px;
+    color: #243244;
+    text-decoration: none;
+}
+
+.logo {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #163b63;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.marca strong,
+.marca small {
+    display: block;
+    line-height: 1.4;
+}
+
+.marca small {
+    color: #627184;
+    font-size: 12px;
+}
+
+
+/* ==============================
+   3. MENU SUPERIOR
+================================= */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #425267;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    color: #0876b9;
+}
+
+
+/* ==============================
+   4. CAMPO DE BUSCA
+================================= */
+
+.busca {
+    display: flex;
+    gap: 6px;
+}
+
+.busca input {
+    width: 180px;
+    padding: 9px 10px;
+    border: 1px solid #d8e0e8;
+    border-radius: 7px;
+    outline: none;
+}
+
+.busca input:focus {
+    border-color: #163b63;
+}
+
+.busca button,
+.botao {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 7px;
+    background-color: #163b63;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.busca button:hover,
+.botao:hover {
+    background-color: #102b49;
+}
+
+
+/* ==============================
+   5. ORGANIZAÇÃO DA PÁGINA
+================================= */
+
+.layout {
+    max-width: 1280px;
+    margin: 28px auto 50px;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 30px;
+    align-items: start;
+}
+
+
+/* ==============================
+   6. MENU LATERAL
+================================= */
+
+.lateral {
+    background-color: #ffffff;
+    border: 1px solid #e0e6ed;
+    border-radius: 12px;
+    padding: 18px 14px;
+    position: sticky;
+    top: 100px;
+}
+
+.lateral h3 {
+    padding: 0 9px;
+    color: #7b8796;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.lateral a {
+    display: block;
+    padding: 8px 9px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #425267;
+    font-size: 14px;
+}
+
+.lateral a:hover {
+    background-color: #eaf2fa;
+    color: #0876b9;
+}
+
+
+/* ==============================
+   7. CONTEÚDO PRINCIPAL
+================================= */
+
+.conteudo {
+    min-width: 0;
+}
+
+.abertura {
+    padding: 34px 36px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    background: linear-gradient(120deg, #173c64, #255c87);
+    color: #ffffff;
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.abertura h1 {
+    max-width: 720px;
+    margin: 15px 0 12px;
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.abertura p {
+    max-width: 650px;
+    color: #e2edf7;
+}
+
+
+/* ==============================
+   8. BLOCOS DE TEXTO
+================================= */
+
+.bloco {
+    padding: 24px 28px;
+    margin-bottom: 16px;
+    background-color: #ffffff;
+    border: 1px solid #e0e6ed;
+    border-radius: 12px;
+}
+
+.bloco h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #102b49;
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+.bloco p {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.bloco p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==============================
+   9. CAIXA DE DESTAQUE
+================================= */
+
+.destaque {
+    margin-top: 16px;
+    padding: 14px;
+    border-left: 4px solid #377fb4;
+    border-radius: 8px;
+    background-color: #f1f7fd;
+}
+
+.destaque strong {
+    color: #163b63;
+}
+
+.destaque p {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+
+/* ==============================
+   10. ETAPAS DO FUNCIONAMENTO
+================================= */
+
+.etapas {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+    padding: 18px;
+    border: 1px solid #e0e6ed;
+    border-radius: 10px;
+    background-color: #f7f9fc;
+}
+
+.etapa {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+}
+
+.etapa span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #163b63;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.etapa strong {
+    font-size: 13px;
+}
+
+.etapa p {
+    margin: 0;
+    color: #627184;
+    font-size: 11px;
+}
+
+.seta {
+    color: #8292a4;
+    font-size: 20px;
+}
+
+
+/* ==============================
+   11. TIPOS DE CAPACITORES
+================================= */
+
+.tipo {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 14px;
+    margin-bottom: 12px;
+    border: 1px solid #e0e6ed;
+    border-radius: 10px;
+}
+
+.tipo:last-child {
+    margin-bottom: 0;
+}
+
+.tipo h3 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    color: #163b63;
+}
+
+.tipo p {
+    margin: 0;
+    color: #536174;
+    font-size: 14px;
+}
+
+
+/* Desenhos dos capacitores feitos com CSS */
+
+.simbolo {
+    position: relative;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+}
+
+.ceramico::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    width: 35px;
+    height: 27px;
+    border: 1px solid #b3a37f;
+    border-radius: 7px;
+    background-color: #d6c7a2;
+}
+
+.ceramico::after {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 4px;
+    width: 52px;
+    height: 2px;
+    background-color: #a8adb3;
+    box-shadow: 0 5px 0 #a8adb3;
+    transform: rotate(-7deg);
+}
+
+.eletrolitico::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 16px;
+    width: 26px;
+    height: 43px;
+    border-radius: 6px;
+    background-color: #202b37;
+    box-shadow: inset 5px 0 0 #394b5d;
+}
+
+.eletrolitico::after {
+    content: "";
+    position: absolute;
+    top: 46px;
+    left: 24px;
+    width: 2px;
+    height: 14px;
+    background-color: #a8adb3;
+    box-shadow: 10px 0 0 #a8adb3;
+}
+
+.filme::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    width: 40px;
+    height: 29px;
+    border: 1px solid #c38b1e;
+    border-radius: 5px;
+    background-color: #e6a62c;
+}
+
+.filme::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 22px;
+    width: 2px;
+    height: 16px;
+    background-color: #a8adb3;
+    box-shadow: 15px 0 0 #a8adb3;
+}
+
+
+/* ==============================
+   12. COMPARAÇÃO
+================================= */
+
+.comparacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.comparacao div {
+    padding: 14px;
+    border: 1px solid #e0e6ed;
+    border-radius: 9px;
+    background-color: #f7f9fc;
+}
+
+.comparacao h3 {
+    margin: 0;
+    color: #163b63;
+    font-size: 16px;
+}
+
+.comparacao p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   13. EXEMPLOS E CURIOSIDADES
+================================= */
+
+.bloco ul {
+    padding-left: 22px;
+}
+
+.bloco li {
+    padding: 5px 0;
+}
+
+#curiosidades {
+    border-left: 4px solid #d69b35;
+}
+
+
+/* ==============================
+   14. RESUMO
+================================= */
+
+.resumo {
+    background-color: #f0f6fc;
+    border-color: #d8e7f5;
+}
+
+
+/* ==============================
+   15. QUIZ
+================================= */
+
+#quiz-form fieldset {
+    margin: 14px 0;
+    padding: 13px 15px;
+    border: 1px solid #e0e6ed;
+    border-radius: 9px;
+}
+
+#quiz-form legend {
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+#quiz-form label {
+    display: block;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+#quiz-form input[type="radio"] {
+    margin-right: 7px;
+    accent-color: #163b63;
+}
+
+#resultado-quiz {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+
+/* ==============================
+   16. REFERÊNCIAS
+================================= */
+
+#referencias a {
+    overflow-wrap: anywhere;
+}
+
+#referencias li {
+    margin-bottom: 8px;
+}
+
+
+/* ==============================
+   17. RODAPÉ
+================================= */
+
+.rodape {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1.5fr;
+    gap: 30px;
+    padding: 28px 5%;
+    background-color: #102b49;
+    color: #e4edf5;
+    font-size: 13px;
+}
+
+.rodape h3 {
+    margin-top: 0;
+}
+
+.rodape p {
+    color: #b8c8d8;
+}
+
+.rodape a {
+    display: block;
+    color: #d6e4f1;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    grid-column: 1 / -1;
+    padding-top: 15px;
+    border-top: 1px solid #35506a;
+}
+
+
+/* ==============================
+   18. RESULTADOS DA BUSCA
+================================= */
+
+.marca-encontrada {
+    outline: 3px solid #f3c969;
+    background-color: #fff9e8;
+}
+
+
+/* ==============================
+   19. ADAPTAÇÃO PARA TABLETS
+================================= */
+
+@media (max-width: 980px) {
+    .topo {
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    .menu {
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    .busca {
+        margin-left: auto;
+    }
+
+    .layout {
+        grid-template-columns: 190px minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .abertura {
+        padding: 27px;
+    }
+
+    .abertura h1 {
+        font-size: 32px;
+    }
+}
+
+
+/* ==============================
+   20. ADAPTAÇÃO PARA CELULARES
+================================= */
+
+@media (max-width: 700px) {
+    .topo {
+        position: static;
+        padding: 14px 18px;
+    }
+
+    .menu {
+        gap: 14px;
+        overflow-x: auto;
+    }
+
+    .busca {
+        width: 100%;
+        margin: 0;
+    }
+
+    .busca input {
+        flex: 1;
+        width: auto;
+        min-width: 0;
+    }
+
+    .layout {
+        display: block;
+        margin-top: 18px;
+        padding: 0 14px;
+    }
+
+    .lateral {
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
+        margin-bottom: 18px;
+    }
+
+    .lateral h3 {
+        grid-column: 1 / -1;
+    }
+
+    .bloco {
+        padding: 20px 17px;
+    }
+
+    .abertura {
+        padding: 24px 20px;
+    }
+
+    .abertura h1 {
+        font-size: 28px;
+    }
+
+    .etapas {
+        gap: 5px;
+        padding: 12px 7px;
+    }
+
+    .etapa p {
+        font-size: 10px;
+    }
+
+    .seta {
+        font-size: 15px;
+    }
+
+    .comparacao {
+        grid-template-columns: 1fr;
+    }
+
+    .rodape {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 24px;
+    }
+
+    .copyright {
+        grid-column: auto;
+    }
+}
