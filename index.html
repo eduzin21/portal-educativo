@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Educacional - SENAI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+
+    <!-- Cabeçalho -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="site-logo">Portal Educacional SENAI</a>
+            
+            <nav class="site-nav">
+                <a href="#login" class="button button-secondary">Login</a>
+                <a href="#cadastro" class="button button-secondary">Cadastro</a>
+                <button type="button" id="btn-ajuda" class="button">Ajuda</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content container">
+        <div class="grid">
+            
+            <!-- Menu Lateral (4 colunas) -->
+            <aside class="col-4">
+                <div class="card">
+                    <h2 class="card-title">Conteúdos</h2>
+                    <nav>
+                        <h3>1. Componentes Passivos Básicos</h3>
+                        <ul>
+                            <li><a href="#t1-1" data-arquivo="t1-1.html">1.1 - Resistores e a Lei de Ohm</a></li>
+                            <li><a href="#t1-2" data-arquivo="t1-2.html">1.2 - Capacitores e Armazenamento de Energia</a></li>
+                            <li><a href="#t1-3" data-arquivo="t1-3.html">1.3 - Indutores e Eletromagnetismo</a></li>
+                            <li><a href="#t1-4" data-arquivo="t1-4.html">1.4 - Associação de Componentes</a></li>
+                        </ul>
+
+                        <h3>2. Semicondutores e Componentes Ativos</h3>
+                        <ul>
+                            <li><a href="#t2-1" data-arquivo="t2-1.html">2.1 - Diodos e Retificação</a></li>
+                            <li><a href="#t2-2" data-arquivo="t2-2.html">2.2 - Transistores Bipolares de Junção (TBJ)</a></li>
+                            <li><a href="#t2-3" data-arquivo="t2-3.html">2.3 - Transistores de Efeito de Campo (MOSFETs)</a></li>
+                            <li><a href="#t2-4" data-arquivo="t2-4.html">2.4 - Circuitos Integrados (CIs)</a></li>
+                        </ul>
+
+                        <h3>3. Grandezas, Sinais e Circuitos Elétricos</h3>
+                        <ul>
+                            <li><a href="#t3-1" data-arquivo="t3-1.html">3.1 - Corrente Contínua (CC) vs. Corrente Alternada (CA)</a></li>
+                            <li><a href="#t3-2" data-arquivo="t3-2.html">3.2 - Leis de Kirchhoff</a></li>
+                            <li><a href="#t3-3" data-arquivo="t3-3.html">3.3 - Potência Elétrica e Efeito Joule</a></li>
+                            <li><a href="#t3-4" data-arquivo="t3-4.html">3.4 - Frequência e Sinais Elétricos</a></li>
+                        </ul>
+
+                        <h3>4. Aplicações Práticas dos Componentes</h3>
+                        <ul>
+                            <li><a href="#t4-1" data-arquivo="t4-1.html">4.1 - Circuitos de Filtros Passivos (RC e RL)</a></li>
+                            <li><a href="#t4-2" data-arquivo="t4-2.html">4.2 - Divisores de Tensão e Corrente</a></li>
+                            <li><a href="#t4-3" data-arquivo="t4-3.html">4.3 - Fontes de Alimentação Lineares</a></li>
+                            <li><a href="#t4-4" data-arquivo="t4-4.html">4.4 - Circuitos de Temporização (Constante de Tempo RC)</a></li>
+                        </ul>
+
+                        <h3>5. Proteção, Medição e Materiais</h3>
+                        <ul>
+                            <li><a href="#t5-1" data-arquivo="t5-1.html">5.1 - Dispositivos de Proteção de Circuitos</a></li>
+                            <li><a href="#t5-2" data-arquivo="t5-2.html">5.2 - Materiais Condutores, Isolantes e Semicondutores</a></li>
+                            <li><a href="#t5-3" data-arquivo="t5-3.html">5.3 - Uso do Multímetro no Diagnóstico de Componentes</a></li>
+                            <li><a href="#t5-4" data-arquivo="t5-4.html">5.4 - Relés e Chaves Eletromecânicas</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- Painel Central (8 colunas) -->
+            <section class="col-8">
+                <div class="card" id="area-conteudo">
+                    <h2 class="card-title">Selecione um conceito</h2>
+                    <p class="card-description">Clique em um dos conceitos no menu à esquerda para visualizar o conteúdo aqui.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p>&copy; 2026 - Projeto Educacional SENAI</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

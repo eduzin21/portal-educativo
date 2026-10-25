@@ -1,0 +1,82 @@
+<h2 class="card-title">1.2 - Capacitores e Armazenamento de Energia</h2>
+
+<div class="stack">
+    <!-- 1. O que é? -->
+    <div>
+        <h3>O que é um Capacitor?</h3>
+        <p>
+            Um <strong>capacitor</strong> (ou condensador) é um componente eletrónico passivo capaz de <strong>armazenar energia elétrica num campo elétrico</strong> e libertá-la rapidamente quando o circuito necessita. É constituído por duas placas condutoras separadas por um material isolante chamado <strong>dielétrico</strong> (como cerâmica, poliéster ou papel).
+        </p>
+    </div>
+
+    <!-- Imagem Ilustrativa dos Tipos de Capacitores -->
+    <div class="text-center" style="margin-block: 1rem;">
+        <img src="imagens/tipos-capacitores.jpg" alt="Principais Tipos de Capacitores" style="max-width: 100%; border-radius: var(--radius-md); border: 1px solid var(--color-border); display: block; margin: 0 auto;">
+        <p class="form-help" style="margin-top: 0.5rem;"><em>Principais tipos de capacitores utilizados em circuitos elétricos e eletrónicos.</em></p>
+    </div>
+
+    <!-- 2. Onde é usado? -->
+    <div>
+        <h3>Onde é usado?</h3>
+        <p>Os capacitores são componentes essenciais em diversos circuitos do nosso quotidiano:</p>
+        <ul>
+            <li><strong>Filtros em Fontes de Alimentação:</strong> Suavizam as oscilações da corrente alternada para fornecer uma corrente contínua estável aos aparelhos.</li>
+            <li><strong>Flashes de Câmeras Fotográficas:</strong> Acumulam carga lentamente e libertam-na de uma só vez para gerar o brilho intenso do flash.</li>
+            <li><strong>Arrancadores de Motores Elétricos:</strong> Fornecem o impulso de energia inicial necessário para dar partida a motores de indução (ex: máquinas de lavar, frigoríficos).</li>
+            <li><strong>Circuitos de Temporização e Áudio:</strong> Trabalham em conjunto com resistores para controlar frequências e tempos de resposta.</li>
+        </ul>
+    </div>
+
+    <!-- 3. Como funciona? -->
+    <div>
+        <h3>Como funciona?</h3>
+        <p>
+            O funcionamento do capacitor baseia-se em dois processos fundamentais:
+        </p>
+        <ul>
+            <li><strong>Carga:</strong> Quando ligado a uma fonte de tensão, as cargas elétricas acumulam-se nas suas placas, criando um campo elétrico no dielétrico.</li>
+            <li><strong>Descarga:</strong> Quando a fonte é removida ou o circuito exige, o capacitor devolve a energia acumulada ao circuito de forma muito rápida.</li>
+        </ul>
+
+        <div class="alert alert-success">
+            <strong>Fórmula da Carga Elétrica:</strong><br>
+            <span style="font-size: 1.25rem; font-weight: bold;">Q = C × V</span>
+            <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                <li><strong>Q:</strong> Carga acumulada em Coulombs (C)</li>
+                <li><strong>C:</strong> Capacitância medida em <strong>Farads (F)</strong></li>
+                <li><strong>V:</strong> Tensão aplicada em Volts (V)</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid var(--color-border); margin-block: 1.5rem;">
+
+    <!-- 4. Quiz de Fixação -->
+    <div>
+        <h3>Quiz de Fixação</h3>
+        <p>Responde às perguntas abaixo para testares os teus conhecimentos:</p>
+
+        <form class="quiz-form" data-resposta-1="b" data-resposta-2="a">
+            <div class="form-group">
+                <label class="form-label">1. Como é que o capacitor armazena a sua energia elétrica?</label>
+                <div>
+                    <label><input type="radio" name="q1" value="a"> Através de reações químicas internas.</label><br>
+                    <label><input type="radio" name="q1" value="b"> Num campo elétrico criado entre as suas placas condutoras.</label><br>
+                    <label><input type="radio" name="q1" value="c"> Aquecendo o seu material isolante.</label>
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 1rem;">
+                <label class="form-label">2. Qual é a unidade de medida padrão da capacitância no Sistema Internacional?</label>
+                <div>
+                    <label><input type="radio" name="q2" value="a"> Farad (F)</label><br>
+                    <label><input type="radio" name="q2" value="b"> Ohm (Ω)</label><br>
+                    <label><input type="radio" name="q2" value="c"> Ampere (A)</label>
+                </div>
+            </div>
+
+            <button type="button" class="button btn-conferir-quiz" style="margin-top: 1rem;">Conferir Respostas</button>
+            <div class="mensagem-quiz" style="margin-top: 1rem;"></div>
+        </form>
+    </div>
+</div>
